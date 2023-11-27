@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Transfer>
+    <NumberTransfer>
+        <Sender>
+            <date>26-11-2023</date>
+            <accountNumber>23465-17384</accountNumber>
+            <AmountOfMoney>233</AmountOfMoney>
+            <TransferAmount>747</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>84847-82383</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+</Transfer>

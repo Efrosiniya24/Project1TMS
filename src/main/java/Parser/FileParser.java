@@ -119,34 +119,6 @@ public class FileParser {
             }
             fileWriter.flush();
         }
-
-        String file = "src/main/resources/input/file1.txt";
-        File outputFolder = new File(file);
-        if (!outputFolder.exists()) {
-            outputFolder.mkdir();
-        }
-
-        String fileName = file.substring(0, file.lastIndexOf("."));
-
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(file));
-             BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/archive/file1new.txt"))) {
-            String line;
-            StringBuilder output = new StringBuilder();
-
-            while ((line = reader.readLine()) != null) {
-                Pattern pattern = Pattern.compile("((<\\w+>)(.*?)(</\\w+>))");
-                Matcher matcher = pattern.matcher(line);
-                while (matcher.find()) {
-                    String tag = matcher.group(1);
-                    if (isAllowedTag(tag)) {
-                        output.append(tag).append("\n");
-                    }
-                }
-            }
-
-            writer.write(output.toString());
-        }
     }
 
     public static void readFile() {
