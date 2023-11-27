@@ -1,3 +1,59 @@
-Номер счета с 23465-17384
-Номер счета на 84847-82383
-Сумма перевода 747
+<?xml version="1.0"?>
+<Transfer>
+    <NumberTransfer>
+        <Sender>
+            <date>26-11-2023</date>
+            <accountNumber>23465-17384</accountNumber>
+            <AmountOfMoney>233</AmountOfMoney>
+            <TransferAmount>747</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>84847-82383</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+    <NumberTransfer>
+        <Sender>
+            <date>21-12-2021</date>
+            <Name>Екатерина</Name>
+            <accountNumber>88375-11773</accountNumber>
+            <AmountOfMoney>121</AmountOfMoney>
+            <City>Минск</City>
+            <TransferAmount>33</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>49383-85853</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+    <NumberTransfer>
+        <Sender>
+            <date>23-10-2023</date>
+            <accountNumber>8875-11773</accountNumber>
+            <AmountOfMoney>121</AmountOfMoney>
+            <TransferAmount>33</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>49383-85853</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+    <NumberTransfer>
+        <Sender>
+            <date>12-01-2023</date>
+            <accountNumber>8875-11773</accountNumber>
+            <AmountOfMoney>121</AmountOfMoney>
+            <TransferAmount>-33</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>49383-85853</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+     <NumberTransfer>
+            <Sender>
+                <date>06-10-2023</date>
+                <AmountOfMoney>121</AmountOfMoney>
+                <TransferAmount>-33</TransferAmount>
+            </Sender>
+            <Receiver>
+                <accountNumberReceiver>49383-85853</accountNumberReceiver>
+            </Receiver>
+        </NumberTransfer>
+</Transfer>

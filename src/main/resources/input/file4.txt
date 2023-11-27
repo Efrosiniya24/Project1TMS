@@ -1,5 +1,39 @@
-Город: Минск
-Номер счета с 23465-17384
-Номер счета на 84847-82383
-Сумма перевода 747
-Имя: Алексей
+<?xml version="1.0"?>
+<Transfer>
+    <NumberTransfer num = "1">
+        <Sender>
+            <date>23-09-2023</date>
+            <accountNumber>93843-29398</accountNumber>
+            <AmountOfMoney>388</AmountOfMoney>
+            <TransferAmount>624</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>73747-43248</accountNumberReceiver>
+            <AmountOfMoney>324</AmountOfMoney>
+        </Receiver>
+    </NumberTransfer>
+    <NumberTransfer num = "2">
+        <Sender>
+            <date>26-11-2023</date>
+            <Name>Екатерина</Name>
+            <accountNumber>88371-12773</accountNumber>
+            <AmountOfMoney>-134</AmountOfMoney>
+            <City>Минск</City>
+            <TransferAmount>323</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>49383-85853</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+    <NumberTransfer num = "3">
+        <Sender>
+            <date>27-11-2023</date>
+            <accountNumber>44738-38284</accountNumber>
+            <AmountOfMoney>235</AmountOfMoney>
+            <TransferAmount>35</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>35823-77453</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+</Transfer>

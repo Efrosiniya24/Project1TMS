@@ -1,2 +1,23 @@
-Номер счета с 23465-17384
-Сумма перевода 747
+<?xml version="1.0"?>
+<Transfer>
+    <NumberTransfer num = "1">
+        <Sender>
+            <date>14-11-2023</date>
+            <accountNumber>23465-17384</accountNumber>
+            <AmountOfMoney>233</AmountOfMoney>
+            <TransferAmount>747</TransferAmount>
+        </Sender>
+    </NumberTransfer>
+    <NumberTransfer num = "2">
+        <Sender>
+            <date>26-11-2023</date>
+            <accountNumber>883751173</accountNumber>
+            <AmountOfMoney>121</AmountOfMoney>
+            <Name>Алексей</Name>
+            <TransferAmount>33</TransferAmount>
+        </Sender>
+        <Receiver>
+            <accountNumberReceiver>49383-85853</accountNumberReceiver>
+        </Receiver>
+    </NumberTransfer>
+</Transfer>
