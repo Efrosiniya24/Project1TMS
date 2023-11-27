@@ -178,5 +178,32 @@ public class FileParser {
 
     }
 
+    public static void newFiles() throws FileNotFoundException {
+        for (String file : files) {
+            File outputFolder = new File(file);
+            if (!outputFolder.exists()) {
+                outputFolder.mkdir();
+            }
 
+            try (BufferedReader reader = new BufferedReader(new FileReader(PATH +file));
+                 BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/archive/" + file))) {
+                String line;
+                StringBuilder output = new StringBuilder();
+
+                while ((line=reader.readLine()) != null) {
+                    Pattern pattern = Pattern.compile("((<\\w+>)(.*?)(</\\w+>))");
+                    Matcher matcher = pattern.matcher(line);
+                    while (matcher.find()) {
+                        String tag = matcher.group(1);
+                        if (isAllowedTag(tag)) {
+                            output.append(tag).append("\n");
+                        }
+                    }
+                }
+                writer.write(output.toString());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }

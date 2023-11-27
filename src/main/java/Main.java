@@ -25,6 +25,7 @@ public class Main {
                     if(Files.fileSearch()) {
                         FileParser.readFiles();
                         FileParser.createFile();
+                        FileParser.newFiles();
                     }
                 }
                 case 2 -> FileParser.readFile();
